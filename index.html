@@ -20,9 +20,11 @@
   <body>
 
       <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>     
-          <input type="text" id="name" name="name" placeholder="Name:" autofocus required>
-          <input type="email" id="email" name="email" placeholder="Email address:" required>      
-          <textarea id="message" name="message"  placeholder="Message:" spellcheck="true" required></textarea>
+          <input type="text" id="firstname" name="firstname">
+          <input type="text" id="lastname" name="lastname">
+          <input type="email" id="email" name="email">      
+          <textarea id="message" name="message"></textarea>
+          <input type="hidden" name="form-name" value="contact" />
       </form> 
     
 

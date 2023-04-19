@@ -18,13 +18,14 @@ export default function Contact(){
 
       <Container sx={{bgcolor:{color1} }} maxWidth='md'>
         <form name="contact" method="POST">
-          <input type="hidden" name="contact" value="contact" />
+          <input type="hidden" name="form-name" value="contact" />
                 <Stack spacing={3} direction="row" sx={{mb:4}}>
                     <TextField
                         type="text"
                         variant='outlined'
                         color= 'secondary'
                         label="First Name"
+                        name='firstname'
                         fullWidth
                         required
                     />
@@ -32,7 +33,8 @@ export default function Contact(){
                         type="text"
                         variant='outlined'
                         color='secondary'
-                        label="Last Name "
+                        label="Last Name"
+                        name='lastname'
                         fullWidth
                         required
                     />
@@ -42,6 +44,7 @@ export default function Contact(){
                     variant='outlined'
                     color='secondary'
                     label="Email"
+                    name='email'
                     fullWidth
                     required
                     sx={{mb: 4}}
@@ -50,6 +53,7 @@ export default function Contact(){
                 <TextField
                   id="outlined-textarea"
                   label='Message'
+                  name='message'
                   color='secondary'
                   multiline
                   rows={5}
