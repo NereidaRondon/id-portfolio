@@ -17,7 +17,8 @@ export default function Contact(){
     <Typography className='title' sx={{py:6}} variant='h3' fontFamily={'Shadows Into Light Two'} >Want to work together? Contact me!</Typography>
 
       <Container sx={{bgcolor:{color1} }} maxWidth='md'>
-        <form name="contact" method="POST" data-netlify="true">
+        <form name="contactForm" method="POST" data-netlify="true">
+          <input type="hidden" name="contactForm" value="contact" />
                 <Stack spacing={3} direction="row" sx={{mb:4}}>
                     <TextField
                         type="text"

@@ -26,6 +26,10 @@ export default function Card(props) {
       <Container fluid className="justify-content-start">
         <Row>
           <Col xs={6} md={4}>
+            
+            <LinkContainer to="/projects">
+                  <Nav.Link className='pt-1 ps-5 pe-5 navlink' >Projects</Nav.Link>
+                </LinkContainer>
             <Button sx={{my:4, px:5, fontSize:'1.25rem',}} 
               variant="outlined"  
               startIcon={<ArrowBackRoundedIcon />} 
@@ -35,6 +39,7 @@ export default function Card(props) {
               href="/projects"
             > Back
             </Button>
+
           </Col>
 
           <Col xs={6} lg={6}></Col>
