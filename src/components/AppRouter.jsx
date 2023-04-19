@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './Home';
 import Approach from './Approach';
 import Projects from './Projects';
-import Videos from './Videos';
+import Media from './Media';
 import Contact from './Contact';
 import AdultLearning from './AdultLearning';
 import Phishing from './Phishing';
@@ -24,7 +24,7 @@ export default function AppRouter() {
 
       <Route path="/projects" element={<Projects />} />
 
-      <Route path="/videos" element={<Videos />} />
+      <Route path="/media" element={<Media />} />
 
       <Route path="/contact" element={<Contact />} />
 

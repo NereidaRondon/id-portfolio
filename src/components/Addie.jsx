@@ -11,7 +11,7 @@ export default function Addie(){
     details:'The eLearning course presents information on the 5 phases of ADDIE. By the end of the course, learners will be able to identify all 5 phases and determine what phase is being applied based off of any given scenario. Includes 10 quiz questions, 8 of which are chosen randomly from a Question Bank.', 
     link:'https://nereidarondon.github.io/ADDIE/',
     storyboard:'',
-    story: true
+    story: false
   };
 
   return(

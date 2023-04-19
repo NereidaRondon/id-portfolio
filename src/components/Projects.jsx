@@ -39,7 +39,24 @@ export default function Projects() {
       <Box sx={{ flexGrow: 1 }}>
       <Grid className='m-0' container spacing={{ xs: 5, md: 7, lg: 9 }} columns={{ xs: 12, sm: 8, md: 12, lg: 12}}>
 
-
+      {/* <LinkContainer to="/adultlearning">
+          <Grid item xs={12} md={6} lg={4}>
+            <Item sx={{ boxShadow: 10 }}>
+              <Card sx={{ boxShadow: 10 }}>
+                  <CardActionArea>
+                    <CardMedia
+                      className='cards'
+                      component='img'
+                      height='300'
+                      image={adult}
+                      alt="Adult Learning Theory eLearning Course"
+                      elevation={24}
+                    />
+                  </CardActionArea>
+              </Card>    
+            </Item>
+          </Grid>
+      </LinkContainer> */}
       
       <LinkContainer to="/adultlearning">
           <Grid item xs={12} md={6} lg={4}>
@@ -177,7 +194,7 @@ export default function Projects() {
 
 
         <Grid item xs={12} md={6} lg={4}>
-          <Link to="https://rondonidportfolio.netlify.app/" target='_blank'>
+          <Link to="https://app.7taps.com/lbOkiEvQue" target='_blank'>
             <Item sx={{ boxShadow: 10 }}>
               <Card sx={{ boxShadow: 10 }}>
                   <CardActionArea>
@@ -204,26 +221,6 @@ export default function Projects() {
       <Box sx={{ flexGrow: 1 }}>
       <Grid className='m-0' container spacing={{ xs: 5, md: 7, lg: 9 }} columns={{ xs: 12, sm: 8, md: 12, lg: 12}}>
 
-        
-         <Grid item xs={12} md={6} lg={4}>
-          <Link to="https://nereidarondon.github.io/Gradebook/" target='_blank'>
-            <Item sx={{ boxShadow: 10 }}>
-              <Card sx={{ boxShadow: 10 }}>
-                  <CardActionArea>
-                    <CardMedia
-                      className='cards'
-                      component="img"
-                      height='300'
-                      image={gradebook}
-                      alt="Gradebook JavaScript Application"
-                      />
-                  </CardActionArea>
-              </Card>    
-            </Item>
-          </Link>
-        </Grid>
-
-          
 
           <Grid item xs={12} md={6} lg={4}>
             <Link to="https://myweatherdashboard.netlify.app/" target='_blank'>
@@ -261,6 +258,24 @@ export default function Projects() {
               </Item>
             </Link>
           </Grid>
+
+         <Grid item xs={12} md={6} lg={4}>
+          <Link to="https://nereidarondon.github.io/Gradebook/" target='_blank'>
+            <Item sx={{ boxShadow: 10 }}>
+              <Card sx={{ boxShadow: 10 }}>
+                  <CardActionArea>
+                    <CardMedia
+                      className='cards'
+                      component="img"
+                      height='300'
+                      image={gradebook}
+                      alt="Gradebook JavaScript Application"
+                      />
+                  </CardActionArea>
+              </Card>    
+            </Item>
+          </Link>
+        </Grid>
 
           <Grid item xs={12} md={6} lg={4}>
             <Link to="https://xoxotictactoe.netlify.app/" target='_blank'>
