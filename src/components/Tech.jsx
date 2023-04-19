@@ -6,14 +6,13 @@ export default function Intro() {
 
   return (
     <React.Fragment>
-      <Container maxWidth="xxl" className='bg-secondary'>
+      <Container maxWidth="xxl" sx={{pb:10, bgcolor:'#bdbdbd'}}>
         
         <Typography className='title' sx={{pt:10}} variant='h3' fontFamily={'Shadows Into Light Two'}>Technologies</Typography>
         <Paper
-         elevation={3}
+         elevation={8}
           sx={{
             py: 3,
-            my:3,
             bgcolor:'secondary',
             width: 300,
             height: 300,

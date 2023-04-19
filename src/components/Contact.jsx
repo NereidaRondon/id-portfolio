@@ -1,25 +1,28 @@
 import React from 'react';
 import { TextField, Button, Container, Typography, Stack } from '@mui/material';
+import SendIcon from '@mui/icons-material/Send';
 import { FormControl, FormLabel } from '@mui/material';
 import { purple } from '@mui/material/colors';
 import { grey } from '@mui/material/colors';
 
 export default function Contact(){
-  
+  const color1 = grey[300];
+
+
   // add back in later (data-netlify="true")
   return(
     
-    <Container id='contact' className='bg-secondary' maxWidth='xxl'>
+    <Container id='contact' className='' sx={{bgcolor:'#bdbdbd'}} maxWidth='xxl'>
         
-    <Typography className='title' sx={{py:3}} variant='h3' fontFamily={'Shadows Into Light Two'} >Want to work together?<br/>Contact me!</Typography>
+    <Typography className='title' sx={{py:6}} variant='h3' fontFamily={'Shadows Into Light Two'} >Want to work together? Contact me!</Typography>
 
-      <Container className='bg-secondary' sx={{py:5}} maxWidth='md'>
+      <Container sx={{bgcolor:{color1} }} maxWidth='md'>
         <form name="contact" method="POST" >
-                <Stack spacing={2} direction="row" sx={{marginBottom: 4}}>
+                <Stack spacing={3} direction="row" sx={{mb:4}}>
                     <TextField
                         type="text"
                         variant='outlined'
-                        color='secondary'
+                        color= 'secondary'
                         label="First Name"
                         fullWidth
                         required
@@ -37,7 +40,7 @@ export default function Contact(){
                     type="email"
                     variant='outlined'
                     color='secondary'
-                    label="Email 📧"
+                    label="Email"
                     fullWidth
                     required
                     sx={{mb: 4}}
@@ -45,7 +48,7 @@ export default function Contact(){
 
                 <TextField
                   id="outlined-textarea"
-                  label='Message✍️'
+                  label='Message'
                   color='secondary'
                   multiline
                   rows={5}
@@ -55,12 +58,22 @@ export default function Contact(){
                   sx={{fontSize:'1.25rem', pb:1}}
                   />
 
-                <Button sx={{my:5, px:5, py:1, fontSize:'1.25rem',}} variant="contained" size="large" color="secondary" elevation='5' type="submit">Submit</Button>
+                <Button sx={{my:3, px:4, fontSize:'1.25rem',}} 
+                  variant="contained"  
+                  endIcon={<SendIcon />} 
+                  size="large" 
+                  color="secondary" 
+                  elevation='5' 
+                  type="submit"
+                >
+                  SEND
+                </Button>
 
             </form>
 
-      </Container>    
-
+      </Container>
+      
+  
       {/*
         <div className="contact-form bg-secondary">
 

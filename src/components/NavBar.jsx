@@ -4,21 +4,14 @@ import { LinkContainer } from 'react-router-bootstrap';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from '../assets/myLogo.svg';
+import { pink } from '@mui/material/colors';
 
 export default function NavBar() {
 
-  const about = useRef(null);
-
-  const scrollDown = (ref) => {
-    window.scrollTo({
-      top: ref.current,
-      behavior: 'smooth',
-    });
-  };
 
   return (
     
-      <Navbar collapseOnSelect bg="dark" expand="md" variant="dark" sticky='top'>
+      <Navbar collapseOnSelect bg="dark" expand="lg" variant="dark" sticky='top'>
       <Container bg="dark" maxWidth='lg'>
 
           <Typography variant='h4' fontFamily={'Shadows Into Light Two'}>
@@ -34,24 +27,25 @@ export default function NavBar() {
               <Nav className="m-auto justify-content-center">
                 
                 <LinkContainer to="/">
-                  <Nav.Link className='ps-3 pe-3'>Home</Nav.Link>
+                  <Nav.Link className='pt-1 ps-5 pe-5 navlink' sx={{'&:hover':{color: pink }}}>Home</Nav.Link>
                 </LinkContainer>
 
-                  
-                  <Nav.Link className='ps-3 pe-3' onClick={() => scrollDown(about)} >About</Nav.Link>
-               
+                <LinkContainer to="/approach">  
+                  <Nav.Link className='pt-1 ps-5 pe-5 navlink'>Approach</Nav.Link>
+                </LinkContainer>
 
                 <LinkContainer to="/projects">
-                  <Nav.Link className='ps-3 pe-3' >Projects</Nav.Link>
+                  <Nav.Link className='pt-1 ps-5 pe-5 navlink' >Projects</Nav.Link>
+                </LinkContainer>
+
+                <LinkContainer to="/media">
+                  <Nav.Link className='pt-1 ps-5 pe-5 navlink' >Media</Nav.Link>
                 </LinkContainer>  
 
-                {/* <LinkContainer to="/skills">  
-                  <Nav.Link className='ps-3 pe-3' >Technologies</Nav.Link>
-                </LinkContainer> */}
-
                 <LinkContainer to="/contact">
-                  <Nav.Link className='ps-3 pe-3' >Contact</Nav.Link>
+                  <Nav.Link className='pt-1 ps-5 pe-5 navlink' >Contact</Nav.Link>
                 </LinkContainer>
+
 
               </Nav>
 
