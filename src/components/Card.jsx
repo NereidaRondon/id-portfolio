@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
+import { LinkContainer } from 'react-router-bootstrap';
 import AdsClickRoundedIcon from '@mui/icons-material/AdsClickRounded';
 import ArrowBackRoundedIcon from '@mui/icons-material/ArrowBackRounded';
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
@@ -28,8 +29,7 @@ export default function Card(props) {
           <Col xs={6} md={4}>
             
             <LinkContainer to="/projects">
-                  <Nav.Link className='pt-1 ps-5 pe-5 navlink' >Projects</Nav.Link>
-                </LinkContainer>
+                 
             <Button sx={{my:4, px:5, fontSize:'1.25rem',}} 
               variant="outlined"  
               startIcon={<ArrowBackRoundedIcon />} 
@@ -37,8 +37,9 @@ export default function Card(props) {
               color="secondary" 
               elevation='5' 
               href="/projects"
-            > Back
+              > Back
             </Button>
+              </LinkContainer>
 
           </Col>
 
