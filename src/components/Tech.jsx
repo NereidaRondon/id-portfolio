@@ -1,29 +1,20 @@
 import React from 'react';
 import { Container, Typography, Paper } from '@mui/material';
-import video from '../assets/My ID Process.mp4';
+import tech from '../assets/tech.svg';
 
 export default function Intro() {
 
   return (
     <React.Fragment>
+        <Typography className='title' sx={{pt:10, pb:6}} variant='h3' fontFamily={'Shadows Into Light Two'}>Technologies I am skilled in...</Typography>
       <Container maxWidth="xxl" sx={{pb:10, bgcolor:'#bdbdbd'}}>
+        <img 
+          className='tech'
+          src={tech} 
+          width='1000'
+          alt='Technologies Nereida is skilled in: Articulate Storyline, Camtasia, Snagit, Microsoft word, Powerpoint, Google Docs, Google sheets, Google Slides, Google Forms, Canva, Figma, YouTube, Affinity Designer'/>
         
-        <Typography className='title' sx={{pt:10}} variant='h3' fontFamily={'Shadows Into Light Two'}>Technologies</Typography>
-        <Paper
-         elevation={8}
-          sx={{
-            py: 3,
-            bgcolor:'secondary',
-            width: 300,
-            height: 300,
-            backgroundColor: 'secondary.main',
-            '&:hover': {
-              backgroundColor: 'secondary.dark',
-              opacity: [0.9, 0.8, 0.7],
-            },
-          }}
-        />
-        {/* <video src={video} width="600" height="300" controls="controls" autoplay="true" /> */}
+        
       </Container>
     </React.Fragment>
 
