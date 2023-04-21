@@ -88,17 +88,32 @@ font-family: 'Roboto', sans-serif;
 }
 @media screen and (max-width: 900px){
   .approach--videos{
-    width: 400px;
-    height: 225px;
+    width: 512px;
+    height: 288px;
   }
   .approach--carousel{
-    width: 496px;
-    height: 279px;
+    width: 528px;
+    height: 297px;
     margin-bottom: 200px;
   }
 }
 
 @media screen and (max-width: 500px){
+  .approach--videos{
+    width: 320px;
+    height: 180px;
+  }
+  .approach--carousel{
+    width: 336px;
+    height: 189px;
+    margin:2rem auto 3rem auto;
+  }
+  .bitmoji{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 350px){
   .approach--videos{
     width: 231px;
     height: 139px;
@@ -107,9 +122,7 @@ font-family: 'Roboto', sans-serif;
     width: 248px;
     height: 139px;
   }
-  .bitmoji{
-    width: 80%;
-  }
+
 }
 /*! ------------------ABOUT--------------------- */
 .about{
@@ -158,7 +171,7 @@ font-family: 'Roboto', sans-serif;
 @media screen and (max-width: 1000px){
   .tech{
     filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, .7));
-    width: 800px;
+    width: 750px;
   }
 } 
 
@@ -168,14 +181,60 @@ font-family: 'Roboto', sans-serif;
     width: 600px;
   }
 } 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 700px){
   .course--frame{
-    height: 250px;
+    height: 340px;
     width: 90%;
     margin:0;
     padding:0;
   }
   .tech{
-    width: 270px;
+    width: 480px;
+    padding: 1rem 0;
   }
-}  
+} 
+@media screen and (max-width: 500px){
+  .course--frame{
+    height: 340px;
+    width: 90%;
+    margin:0;
+    padding:0;
+  }
+  .tech{
+    width: 300px;
+    padding: 1rem 0;
+  }
+}
+@media screen and (max-width: 350px){
+  .course--frame{
+    height: 200px;
+    width: 90%;
+    margin:0;
+    padding:0;
+  }
+  .tech{
+    width: 250px;
+  }
+
+  .cards{
+    height: 130px;
+  }
+} 
+/* !--------------------MEDIA------------------------- */
+@media screen and (max-width: 750px){
+
+  .video{
+    width: 320px;
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 350px){
+  .media--container{
+    padding:0; 
+  }  
+  .video{
+    width: 240px;
+    height: 135px;
+  }
+}
