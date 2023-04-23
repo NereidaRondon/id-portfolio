@@ -192,6 +192,12 @@ font-family: 'Roboto', sans-serif;
     width: 480px;
     padding: 1rem 0;
   }
+  .title{
+    filter: drop-shadow(1px 1px .25px black);
+  }
+  .subtitle{
+    filter: drop-shadow(.75px .75px .10px black);
+  }
 } 
 @media screen and (max-width: 500px){
   .course--frame{
@@ -205,7 +211,7 @@ font-family: 'Roboto', sans-serif;
     padding: 1rem 0;
   }
 }
-@media screen and (max-width: 350px){
+@media screen and (max-width: 400px){
   .course--frame{
     height: 200px;
     width: 90%;
@@ -217,7 +223,22 @@ font-family: 'Roboto', sans-serif;
   }
 
   .cards{
-    height: 130px;
+    height: 200px;
+  }
+} 
+@media screen and (max-width: 250px){
+  .course--frame{
+    height: 200px;
+    width: 90%;
+    margin:0;
+    padding:0;
+  }
+  .tech{
+    width: 250px;
+  }
+
+  .cards{
+    height: 100px;
   }
 } 
 /* !--------------------MEDIA------------------------- */
