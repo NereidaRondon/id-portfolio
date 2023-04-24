@@ -11,6 +11,7 @@ import Parallel from './Parallel';
 import Addie from './Addie';
 import Tour from './Tour';
 import Sam from './Sam';
+import AddieSB from './AddieSB';
 
 export default function AppRouter() {
 
@@ -36,7 +37,7 @@ export default function AppRouter() {
       <Route path="/addie" element={<Addie />} />
       <Route path="/sam" element={<Sam />} />
       <Route path="/tour" element={<Tour />} />
-      <Route path="/approach" element={<Approach />} />
+      <Route path="/addieSB" element={<AddieSB />} />
       <Route path="/approach" element={<Approach />} />
       <Route path="/approach" element={<Approach />} />
 
