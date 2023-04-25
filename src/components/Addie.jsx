@@ -1,6 +1,5 @@
 import React from 'react';
 import Card from './Card';
-import storyboard1 from '../assets/AddieSB.pdf';
 
 export default function Addie(){
 

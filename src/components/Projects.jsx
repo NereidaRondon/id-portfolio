@@ -37,7 +37,7 @@ export default function Projects() {
       <Typography className='title' sx={{py:6}} variant='h3' fontFamily={'Shadows Into Light Two'}>eLearning</Typography>
 
       <Box sx={{ flexGrow: 1 }}>
-      <Grid className='m-0' container spacing={{ xs: 5, md: 7, lg: 9 }} columns={{ xs: 12, sm: 8, md: 12, lg: 12}}>
+      <Grid className='m-0' container spacing={{ xs: 3, sm:4, md: 8, lg: 8 }} columns={{ xs: 12, sm: 4, md: 12, lg: 12}}>
 
       {/* <LinkContainer to="/adultlearning">
           <Grid item xs={12} md={6} lg={4}>

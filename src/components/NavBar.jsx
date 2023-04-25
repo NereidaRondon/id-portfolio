@@ -16,8 +16,8 @@ export default function NavBar() {
 
           <Typography variant='h4' fontFamily={'Shadows Into Light Two'}>
           <LinkContainer to="/">
-            <Navbar.Brand>
-              <img src={logo} className='logo p-0 bounce' alt='NR logo' />
+            <Navbar.Brand className='logo m-0 p-0'>
+              <img src={logo} className='logo m-0 p-0 bounce' alt='NR logo' />
             </Navbar.Brand>
           </LinkContainer>
           <br/>
@@ -30,12 +30,12 @@ export default function NavBar() {
                   <Nav.Link className='pt-1 ps-5 pe-5 navlink' sx={{'&:hover':{color: pink }}}>Home</Nav.Link>
                 </LinkContainer>
 
-                <LinkContainer to="/approach">  
-                  <Nav.Link className='pt-1 ps-5 pe-5 navlink'>Approach</Nav.Link>
-                </LinkContainer>
-
                 <LinkContainer to="/projects">
                   <Nav.Link className='pt-1 ps-5 pe-5 navlink' >Projects</Nav.Link>
+                </LinkContainer>
+
+                <LinkContainer to="/approach">  
+                  <Nav.Link className='pt-1 ps-5 pe-5 navlink'>Approach</Nav.Link>
                 </LinkContainer>
 
                 <LinkContainer to="/media">

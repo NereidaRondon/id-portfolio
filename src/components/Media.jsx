@@ -46,9 +46,9 @@ export default function Media() {
     <Typography className='title' sx={{py:6}} variant='h3' fontFamily={'Shadows Into Light Two'}>Canva Graphics</Typography>
 
       <Box sx={{ flexGrow: 1 }}>
-      <Grid className='m-0' container spacing={{ xs: 5, md: 6, lg: 7, xl:9 }} >
+      <Grid className='m-0' container spacing={{ xs: 6, md: 8, lg: 10, xl:12 }} >
 
-        <Grid item xs={12} md={6} xl={6}>
+        <Grid item xs={12} md={6}>
           <Link to="https://www.canva.com/design/DAFUrgAYBQA/view" target='_blank'>
             <Item sx={{ boxShadow: 10 }}>
               <Card sx={{ boxShadow: 10 }}>
@@ -56,7 +56,7 @@ export default function Media() {
                     <CardMedia
                       className='cards'
                       component='img'
-                      height='275'
+                      height='350'
                       image={addiegraphic}
                       alt="ADDIE Infographic"
                       />
@@ -66,7 +66,7 @@ export default function Media() {
           </Link>
         </Grid>
 
-        <Grid item xs={12} md={6} xl={6}>
+        <Grid item xs={12} md={6}>
           <Link to="https://www.canva.com/design/DAFU4Imclbg/view" target='_blank'>
             <Item sx={{ boxShadow: 10 }}>
               <Card sx={{ boxShadow: 10 }}>
@@ -74,7 +74,7 @@ export default function Media() {
                     <CardMedia
                       className='cards'
                       component='img'
-                      height='275'
+                      height='350'
                       image={blooms}
                       alt="Bloom's Taxonomy Infographic"
                       />
