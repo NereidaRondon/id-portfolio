@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Addie from '../assets/AddieSB.pdf';
 
 export default function AddieSB(){
